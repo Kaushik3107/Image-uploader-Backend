@@ -8,7 +8,7 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-  origin: ['http://localhost:5000', 'https://image-uploader-frontend-ten.vercel.app'], // Allow localhost during development and your Vercel frontend URL
+  origin: ['*'], // Allow localhost during development and your Vercel frontend URL
   methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allow these HTTP methods
   credentials: true, // If you're sending cookies, you need to include this
 }));
